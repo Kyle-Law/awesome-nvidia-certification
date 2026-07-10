@@ -3,6 +3,13 @@
 // folder, so the deploy workflow copies it in rather than the frontend
 // reaching outside its own root) and renders the filterable/sortable grid.
 
+// All NVIDIA certification exams currently offered, shown as filter tabs
+// even when the index has no resources for one yet.
+const ALL_CERTS = [
+  "NCA-ADS", "NCA-AIIO", "NCA-GENL", "NCA-GENM",
+  "NCP-AAI", "NCP-ADS", "NCP-AII", "NCP-AIN", "NCP-AIO", "NCP-GENL", "NCP-OUSD",
+];
+
 const state = {
   entries: [],
   cert: "ALL",
@@ -49,7 +56,7 @@ function cardTemplate(entry) {
       : "";
 
   return `
-    <article class="card${dim ? " is-dim" : ""}">
+    <a class="card${dim ? " is-dim" : ""}" href="${escapeAttr(entry.url)}" target="_blank" rel="noopener">
       <div class="card-head">
         <h2>${escapeHtml(entry.title)}</h2>
         <span class="type-badge">${escapeHtml(entry.type)}</span>
@@ -65,8 +72,8 @@ function cardTemplate(entry) {
       <div class="cert-tags">
         ${entry.certs.map((c) => `<span class="cert-tag">${escapeHtml(c)}</span>`).join("")}
       </div>
-      <a class="card-link" href="${escapeAttr(entry.url)}" target="_blank" rel="noopener">view &#8599;</a>
-    </article>
+      <span class="card-link">view &#8599;</span>
+    </a>
   `;
 }
 
@@ -103,9 +110,8 @@ function render() {
   emptyState.hidden = visible.length > 0;
 }
 
-function buildCertFilters(entries) {
-  const certs = [...new Set(entries.flatMap((e) => e.certs))].sort();
-  const buttons = ["ALL", ...certs].map(
+function buildCertFilters() {
+  const buttons = ["ALL", ...ALL_CERTS].map(
     (cert) => `<button class="chip${cert === state.cert ? " is-active" : ""}" data-cert="${escapeAttr(cert)}">${escapeHtml(cert)}</button>`
   );
   certFilters.innerHTML = buttons.join("");
@@ -136,7 +142,7 @@ async function main() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     state.entries = data.entries ?? [];
-    buildCertFilters(state.entries);
+    buildCertFilters();
     render();
   } catch (err) {
     console.error(err);
