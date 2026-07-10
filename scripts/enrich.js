@@ -86,6 +86,7 @@ async function enrichEntry(entry, previous, today, now) {
     type: entry.type,
     description: entry.description,
     source,
+    repo_url: source === "github" ? `https://github.com/${repo}` : null,
     stars: meta.stars,
     last_updated: meta.last_updated,
     language: meta.language,

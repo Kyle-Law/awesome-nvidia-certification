@@ -194,9 +194,6 @@ body {
   flex-direction: column;
   gap: 0.65rem;
   position: relative;
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
@@ -319,19 +316,33 @@ body {
   padding: 0.1rem 0.4rem;
 }
 
-.card-link {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--muted);
-  text-decoration: none;
-  align-self: flex-start;
-  border-bottom: 1px solid transparent;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
 }
 
-.card:hover .card-link {
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--pcb-line);
+  border-radius: 3px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.icon-link svg {
+  width: 14px;
+  height: 14px;
+}
+
+.icon-link:hover,
+.icon-link:focus-visible {
+  border-color: var(--copper);
   color: var(--copper);
-  border-bottom-color: var(--copper);
 }
 
 /* ---------- states ---------- */

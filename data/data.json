@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T17:28:17.590Z",
+  "generated_at": "2026-07-10T17:50:16.690Z",
   "entries": [
     {
       "url": "https://github.com/NVIDIA/nemo-guardrails",
@@ -10,6 +10,7 @@
       "type": "repo",
       "description": "Toolkit for adding programmable guardrails to LLM-based conversational systems.",
       "source": "github",
+      "repo_url": "https://github.com/NVIDIA/nemo-guardrails",
       "stars": 6659,
       "last_updated": "2026-07-10T16:00:17Z",
       "language": "Python",
@@ -27,7 +28,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:28:17.590Z"
+      "last_checked": "2026-07-10T17:50:16.690Z"
     },
     {
       "url": "https://github.com/NVIDIA/TensorRT-LLM",
@@ -38,6 +39,7 @@
       "type": "repo",
       "description": "Library for optimizing and deploying LLM inference on NVIDIA GPUs.",
       "source": "github",
+      "repo_url": "https://github.com/NVIDIA/TensorRT-LLM",
       "stars": 14087,
       "last_updated": "2026-07-10T16:14:33Z",
       "language": "Python",
@@ -51,7 +53,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:28:17.590Z"
+      "last_checked": "2026-07-10T17:50:16.690Z"
     },
     {
       "url": "https://www.nvidia.com/en-us/training/",
@@ -63,6 +65,7 @@
       "type": "study-guide",
       "description": "Official NVIDIA training and certification program overview.",
       "source": "external",
+      "repo_url": null,
       "stars": null,
       "last_updated": null,
       "language": null,
@@ -70,7 +73,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:28:17.590Z"
+      "last_checked": "2026-07-10T17:50:16.690Z"
     },
     {
       "url": "https://martin-kaufmann.github.io/ncp-aio-prep/",
@@ -81,6 +84,7 @@
       "type": "simulation",
       "description": "Domain-weighted quiz, guided lab scenarios, and a stateful command sandbox (BCM cmsh, Slurm, Kubernetes, DCGM, InfiniBand) for NCP-AIO.",
       "source": "github",
+      "repo_url": "https://github.com/martin-kaufmann/ncp-aio-prep",
       "stars": 0,
       "last_updated": "2026-07-10T07:55:14Z",
       "language": "HTML",
@@ -97,7 +101,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:28:17.590Z"
+      "last_checked": "2026-07-10T17:50:16.690Z"
     },
     {
       "url": "https://dclabsim.com",
@@ -108,6 +112,7 @@
       "type": "simulation",
       "description": "Practice lab for NCP-AII covering 229 datacenter commands across DGX, InfiniBand, and SLURM scenarios.",
       "source": "external",
+      "repo_url": null,
       "stars": null,
       "last_updated": null,
       "language": null,
@@ -115,7 +120,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:28:17.590Z"
+      "last_checked": "2026-07-10T17:50:16.690Z"
     },
     {
       "url": "https://kyle-law.github.io/bcm-simulator/",
@@ -126,6 +131,7 @@
       "type": "simulation",
       "description": "Interactive cmsh command-line trainer for NVIDIA Base Command Manager.",
       "source": "github",
+      "repo_url": "https://github.com/kyle-law/bcm-simulator",
       "stars": 1,
       "last_updated": "2026-07-07T17:12:21Z",
       "language": "JavaScript",
@@ -133,7 +139,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:28:17.590Z"
+      "last_checked": "2026-07-10T17:50:16.690Z"
     }
   ]
 }
