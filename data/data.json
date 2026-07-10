@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T18:38:13.700Z",
+  "generated_at": "2026-07-10T18:39:40.234Z",
   "entries": [
     {
       "url": "https://martin-kaufmann.github.io/ncp-aio-prep/",
@@ -27,7 +27,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T18:38:13.700Z"
+      "last_checked": "2026-07-10T18:39:40.234Z"
     },
     {
       "url": "https://dclabsim.com",
@@ -46,7 +46,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T18:38:13.700Z"
+      "last_checked": "2026-07-10T18:39:40.234Z"
     },
     {
       "url": "https://kyle-law.github.io/bcm-simulator/",
@@ -65,7 +65,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T18:38:13.700Z"
+      "last_checked": "2026-07-10T18:39:40.234Z"
     }
   ]
 }
