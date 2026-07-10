@@ -1,0 +1,15 @@
+{
+  "name": "nvidia-cert-prep-hub",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "enrich": "node scripts/enrich.js",
+    "validate": "node scripts/validate.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

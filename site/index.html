@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NCA Prep Hub — NVIDIA Certification Study Resources</title>
+  <meta name="description" content="Community-indexed prep resources for NVIDIA certification exams, ranked by real signal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <p class="eyebrow">// NCA PREP HUB</p>
+      <h1>NVIDIA certification prep, indexed.</h1>
+      <p class="tagline">Community-maintained study resources for NVIDIA certs — ranked by real signal: stars, freshness, and uptime, not vibes.</p>
+    </header>
+
+    <div class="toolbar">
+      <div class="cert-filters" id="certFilters" role="group" aria-label="Filter by certification"></div>
+      <div class="sort-tabs" role="tablist" aria-label="Sort entries">
+        <button class="tab is-active" data-sort="top" role="tab" aria-selected="true">TOP</button>
+        <button class="tab" data-sort="recent" role="tab" aria-selected="false">RECENT</button>
+        <button class="tab" data-sort="new" role="tab" aria-selected="false">NEW</button>
+      </div>
+    </div>
+
+    <main class="grid" id="grid" aria-live="polite"></main>
+
+    <p class="empty-state" id="emptyState" hidden>No entries match this filter. Clear it, or try another cert.</p>
+    <p class="error-state" id="errorState" hidden>Couldn't load data.json. If you're running this locally, serve the folder over HTTP instead of opening the file directly.</p>
+
+    <footer class="site-footer">
+      <span class="led led-alive" aria-hidden="true"></span>
+      <p>Missing a resource? <a href="https://github.com/Kyle-Law/awesome-nvidia-certification/blob/main/CONTRIBUTING.md">Add it</a> — one PR, one entry.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

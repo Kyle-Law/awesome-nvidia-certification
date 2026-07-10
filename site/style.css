@@ -1,0 +1,373 @@
+/* ---------------------------------------------------------------------
+   NCA Prep Hub — "spec sheet" theme.
+   Palette (dark, default):
+     --void    #0A0F0B  page background
+     --pcb     #10231A  card / surface background
+     --nvidia  #76B900  primary accent (links, active state, alive LED)
+     --copper  #C9752B  secondary accent (dividers, hover, warnings)
+     --silk    #E8EDE6  primary text
+     --muted   #6B8577  secondary text
+   Light mode swaps these for a pale silkscreen board, same identity.
+------------------------------------------------------------------------ */
+
+:root {
+  --void: #0A0F0B;
+  --pcb: #12251B;
+  --pcb-line: #1D3A28;
+  --nvidia: #86D400;
+  --copper: #D98A3D;
+  --silk: #E8EDE6;
+  --muted: #7C9787;
+  --danger: #C0523F;
+
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --void: #EEF2ED;
+    --pcb: #FFFFFF;
+    --pcb-line: #D3DED3;
+    --nvidia: #4C7A00;
+    --copper: #A85F1C;
+    --silk: #16241A;
+    --muted: #55705E;
+    --danger: #A23F30;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--void);
+  background-image:
+    linear-gradient(var(--pcb-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--pcb-line) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--silk);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  border-bottom: 1px solid var(--pcb-line);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: var(--nvidia);
+  margin: 0 0 0.75rem;
+}
+
+.masthead h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.15;
+  margin: 0 0 0.75rem;
+  max-width: 20ch;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 52ch;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ---------- toolbar ---------- */
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.cert-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--pcb-line);
+  border-radius: 3px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.chip:hover {
+  border-color: var(--copper);
+  color: var(--silk);
+}
+
+.chip.is-active {
+  border-color: var(--nvidia);
+  color: var(--nvidia);
+  background: color-mix(in srgb, var(--nvidia) 12%, transparent);
+}
+
+.sort-tabs {
+  display: flex;
+  border: 1px solid var(--pcb-line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.tab {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--pcb-line);
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.tab:last-child {
+  border-right: none;
+}
+
+.tab:hover {
+  color: var(--silk);
+}
+
+.tab.is-active {
+  background: var(--nvidia);
+  color: var(--void);
+  font-weight: 500;
+}
+
+/* ---------- grid & cards ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--pcb);
+  border: 1px solid var(--pcb-line);
+  border-radius: 4px;
+  padding: 1.1rem 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  position: relative;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--copper);
+}
+
+.card.is-dim {
+  opacity: 0.55;
+}
+
+.card.is-dim:hover {
+  opacity: 0.85;
+}
+
+.card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card-head h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.type-badge {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  border: 1px solid var(--pcb-line);
+  border-radius: 2px;
+  padding: 0.15rem 0.4rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--silk);
+}
+
+.led {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--muted);
+}
+
+.led-alive {
+  background: var(--nvidia);
+  box-shadow: 0 0 6px color-mix(in srgb, var(--nvidia) 70%, transparent);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.led-archived {
+  background: var(--copper);
+}
+
+.led-dead {
+  background: var(--danger);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+.sep {
+  color: var(--pcb-line);
+}
+
+.stamp {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: var(--copper);
+  border: 1px solid var(--copper);
+  border-radius: 2px;
+  padding: 0.1rem 0.35rem;
+  margin-left: auto;
+}
+
+.stamp.stamp-dead {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.cert-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cert-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  color: var(--nvidia);
+  border: 1px solid color-mix(in srgb, var(--nvidia) 40%, var(--pcb-line));
+  border-radius: 2px;
+  padding: 0.1rem 0.4rem;
+}
+
+.card-link {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-decoration: none;
+  align-self: flex-start;
+  border-bottom: 1px solid transparent;
+}
+
+.card-link:hover {
+  color: var(--copper);
+  border-bottom-color: var(--copper);
+}
+
+/* ---------- states ---------- */
+
+.empty-state,
+.error-state {
+  text-align: center;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 3rem 1rem;
+}
+
+.error-state {
+  color: var(--danger);
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--pcb-line);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.site-footer a {
+  color: var(--nvidia);
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 2.5rem 1rem 3rem;
+  }
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

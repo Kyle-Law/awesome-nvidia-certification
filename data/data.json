@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-07-10T17:02:03.583Z",
+  "entries": [
+    {
+      "url": "https://github.com/NVIDIA/nemo-guardrails",
+      "title": "NeMo Guardrails",
+      "certs": [
+        "NCA-GENL"
+      ],
+      "type": "repo",
+      "description": "Toolkit for adding programmable guardrails to LLM-based conversational systems.",
+      "source": "github",
+      "stars": 6659,
+      "last_updated": "2026-07-10T16:00:17Z",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "generative-ai",
+        "guardrails",
+        "llm-safety",
+        "llm-security",
+        "llms",
+        "nvidia",
+        "python",
+        "safety"
+      ],
+      "archived": false,
+      "alive": true,
+      "date_added": "2026-07-10",
+      "last_checked": "2026-07-10T17:02:03.583Z"
+    },
+    {
+      "url": "https://github.com/NVIDIA/TensorRT-LLM",
+      "title": "TensorRT-LLM",
+      "certs": [
+        "NCA-AIIO"
+      ],
+      "type": "repo",
+      "description": "Library for optimizing and deploying LLM inference on NVIDIA GPUs.",
+      "source": "github",
+      "stars": 14087,
+      "last_updated": "2026-07-10T16:14:33Z",
+      "language": "Python",
+      "topics": [
+        "blackwell",
+        "cuda",
+        "llm-serving",
+        "moe",
+        "pytorch"
+      ],
+      "archived": false,
+      "alive": true,
+      "date_added": "2026-07-10",
+      "last_checked": "2026-07-10T17:02:03.583Z"
+    },
+    {
+      "url": "https://www.nvidia.com/en-us/training/",
+      "title": "NVIDIA Training & Certification",
+      "certs": [
+        "NCA-GENL",
+        "NCA-AIIO"
+      ],
+      "type": "study-guide",
+      "description": "Official NVIDIA training and certification program overview.",
+      "source": "external",
+      "stars": null,
+      "last_updated": null,
+      "language": null,
+      "topics": [],
+      "archived": false,
+      "alive": true,
+      "date_added": "2026-07-10",
+      "last_checked": "2026-07-10T17:02:03.583Z"
+    }
+  ]
+}

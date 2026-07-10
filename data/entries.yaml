@@ -1,0 +1,31 @@
+# Source of truth for the awesome-list.
+#
+# Add ONE entry per contribution. Only these fields are hand-entered —
+# everything else (stars, last_updated, alive, date_added, ...) is
+# auto-derived by scripts/enrich.js and written to data/data.json.
+#
+# Fields:
+#   url         - GitHub repo, GitHub Pages site, or external URL (required, unique)
+#   title       - display name (required)
+#   certs       - list of NVIDIA cert codes this applies to, e.g. [NCA-GENL, NCA-AIIO]
+#   type        - one of: repo | simulation | flashcards | study-guide | site
+#   description - one sentence, no marketing fluff
+
+entries:
+  - url: https://github.com/NVIDIA/nemo-guardrails
+    title: NeMo Guardrails
+    certs: [NCA-GENL]
+    type: repo
+    description: Toolkit for adding programmable guardrails to LLM-based conversational systems.
+
+  - url: https://github.com/NVIDIA/TensorRT-LLM
+    title: TensorRT-LLM
+    certs: [NCA-AIIO]
+    type: repo
+    description: Library for optimizing and deploying LLM inference on NVIDIA GPUs.
+
+  - url: https://www.nvidia.com/en-us/training/
+    title: NVIDIA Training & Certification
+    certs: [NCA-GENL, NCA-AIIO]
+    type: study-guide
+    description: Official NVIDIA training and certification program overview.
