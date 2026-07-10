@@ -1,6 +1,6 @@
 # Awesome NVIDIA Certification
 
-A community-maintained, awesome-list-style index of prep resources for **NVIDIA certification exams** — study guides, practice repos, flashcards, and simulations. Entries are ranked by real signal (stars, freshness, uptime), not submission order.
+A community-maintained, awesome-list-style index of prep resources for **NVIDIA certification exams** — quizzes, lab simulators, and practice sandboxes built by the community, not official NVIDIA docs or generic study guides. Entries are ranked by real signal (stars, freshness, uptime), not submission order.
 
 **[Browse the live index →](https://kyle-law.github.io/awesome-nvidia-certification/)**
 

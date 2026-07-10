@@ -12,24 +12,6 @@
 #   description - one sentence, no marketing fluff
 
 entries:
-  - url: https://github.com/NVIDIA/nemo-guardrails
-    title: NeMo Guardrails
-    certs: [NCA-GENL]
-    type: repo
-    description: Toolkit for adding programmable guardrails to LLM-based conversational systems.
-
-  - url: https://github.com/NVIDIA/TensorRT-LLM
-    title: TensorRT-LLM
-    certs: [NCA-AIIO]
-    type: repo
-    description: Library for optimizing and deploying LLM inference on NVIDIA GPUs.
-
-  - url: https://www.nvidia.com/en-us/training/
-    title: NVIDIA Training & Certification
-    certs: [NCA-GENL, NCA-AIIO]
-    type: study-guide
-    description: Official NVIDIA training and certification program overview.
-
   - url: https://martin-kaufmann.github.io/ncp-aio-prep/
     title: NCP-AIO Exam Prep
     certs: [NCP-AIO]

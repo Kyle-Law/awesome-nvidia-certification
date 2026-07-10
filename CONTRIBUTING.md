@@ -26,7 +26,8 @@ Do **not** add `stars`, `last_updated`, `date_added`, `alive`, or similar — th
 
 ## What gets accepted
 
-- Legitimate, original prep material: study notes, practice repos, simulations, flashcard decks, official docs.
+- Community-built prep material: quizzes, lab simulators, practice sandboxes, flashcard decks, original study notes.
+- Not accepted: official NVIDIA docs/training pages, vendor SDK repos, or other resources not made for exam prep.
 - One resource per PR, so review stays fast.
 
 ## What gets rejected

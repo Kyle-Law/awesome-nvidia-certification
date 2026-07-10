@@ -1,80 +1,6 @@
 {
-  "generated_at": "2026-07-10T17:50:16.690Z",
+  "generated_at": "2026-07-10T18:38:13.700Z",
   "entries": [
-    {
-      "url": "https://github.com/NVIDIA/nemo-guardrails",
-      "title": "NeMo Guardrails",
-      "certs": [
-        "NCA-GENL"
-      ],
-      "type": "repo",
-      "description": "Toolkit for adding programmable guardrails to LLM-based conversational systems.",
-      "source": "github",
-      "repo_url": "https://github.com/NVIDIA/nemo-guardrails",
-      "stars": 6659,
-      "last_updated": "2026-07-10T16:00:17Z",
-      "language": "Python",
-      "topics": [
-        "agents",
-        "generative-ai",
-        "guardrails",
-        "llm-safety",
-        "llm-security",
-        "llms",
-        "nvidia",
-        "python",
-        "safety"
-      ],
-      "archived": false,
-      "alive": true,
-      "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:50:16.690Z"
-    },
-    {
-      "url": "https://github.com/NVIDIA/TensorRT-LLM",
-      "title": "TensorRT-LLM",
-      "certs": [
-        "NCA-AIIO"
-      ],
-      "type": "repo",
-      "description": "Library for optimizing and deploying LLM inference on NVIDIA GPUs.",
-      "source": "github",
-      "repo_url": "https://github.com/NVIDIA/TensorRT-LLM",
-      "stars": 14087,
-      "last_updated": "2026-07-10T16:14:33Z",
-      "language": "Python",
-      "topics": [
-        "blackwell",
-        "cuda",
-        "llm-serving",
-        "moe",
-        "pytorch"
-      ],
-      "archived": false,
-      "alive": true,
-      "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:50:16.690Z"
-    },
-    {
-      "url": "https://www.nvidia.com/en-us/training/",
-      "title": "NVIDIA Training & Certification",
-      "certs": [
-        "NCA-GENL",
-        "NCA-AIIO"
-      ],
-      "type": "study-guide",
-      "description": "Official NVIDIA training and certification program overview.",
-      "source": "external",
-      "repo_url": null,
-      "stars": null,
-      "last_updated": null,
-      "language": null,
-      "topics": [],
-      "archived": false,
-      "alive": true,
-      "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:50:16.690Z"
-    },
     {
       "url": "https://martin-kaufmann.github.io/ncp-aio-prep/",
       "title": "NCP-AIO Exam Prep",
@@ -101,7 +27,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:50:16.690Z"
+      "last_checked": "2026-07-10T18:38:13.700Z"
     },
     {
       "url": "https://dclabsim.com",
@@ -120,7 +46,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:50:16.690Z"
+      "last_checked": "2026-07-10T18:38:13.700Z"
     },
     {
       "url": "https://kyle-law.github.io/bcm-simulator/",
@@ -139,7 +65,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:50:16.690Z"
+      "last_checked": "2026-07-10T18:38:13.700Z"
     }
   ]
 }

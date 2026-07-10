@@ -61,11 +61,15 @@ function cardTemplate(entry) {
   const showGithubIcon = Boolean(entry.repo_url);
 
   return `
-    <article class="card${dim ? " is-dim" : ""}" title="Open link">
+    <article class="card${dim ? " is-dim" : ""}">
       <div class="card-head">
         <h2>${escapeHtml(entry.title)}</h2>
-        <span class="type-badge">${escapeHtml(entry.type)}</span>
+        <div class="card-actions">
+          <a class="icon-link" href="${escapeAttr(entry.url)}" target="_blank" rel="noopener" aria-label="Open ${escapeAttr(entry.title)} site">${ICON_EXTERNAL}</a>
+          ${showGithubIcon ? `<a class="icon-link" href="${escapeAttr(entry.repo_url)}" target="_blank" rel="noopener" aria-label="View ${escapeAttr(entry.title)} on GitHub">${ICON_GITHUB}</a>` : ""}
+        </div>
       </div>
+      <span class="type-badge">${escapeHtml(entry.type)}</span>
       <p class="desc">${escapeHtml(entry.description)}</p>
       <div class="card-meta">
         <span class="led ${status.cls}" title="${status.label}"></span>
@@ -76,10 +80,6 @@ function cardTemplate(entry) {
       </div>
       <div class="cert-tags">
         ${entry.certs.map((c) => `<span class="cert-tag">${escapeHtml(c)}</span>`).join("")}
-      </div>
-      <div class="card-actions">
-        <a class="icon-link" href="${escapeAttr(entry.url)}" target="_blank" rel="noopener" title="Open link" aria-label="Open ${escapeAttr(entry.title)} site">${ICON_EXTERNAL}</a>
-        ${showGithubIcon ? `<a class="icon-link" href="${escapeAttr(entry.repo_url)}" target="_blank" rel="noopener" title="View code" aria-label="View ${escapeAttr(entry.title)} on GitHub">${ICON_GITHUB}</a>` : ""}
       </div>
     </article>
   `;
@@ -119,7 +119,15 @@ function render() {
 }
 
 function buildCertFilters() {
-  const buttons = ["ALL", ...ALL_CERTS].map(
+  const counts = new Map(ALL_CERTS.map((cert) => [cert, 0]));
+  for (const entry of state.entries) {
+    for (const cert of entry.certs) {
+      if (counts.has(cert)) counts.set(cert, counts.get(cert) + 1);
+    }
+  }
+  const ranked = [...ALL_CERTS].sort((a, b) => counts.get(b) - counts.get(a));
+
+  const buttons = ["ALL", ...ranked].map(
     (cert) => `<button class="chip${cert === state.cert ? " is-active" : ""}" data-cert="${escapeAttr(cert)}">${escapeHtml(cert)}</button>`
   );
   certFilters.innerHTML = buttons.join("");
