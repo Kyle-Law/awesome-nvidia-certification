@@ -58,7 +58,7 @@ function cardTemplate(entry) {
     : entry.archived
       ? '<span class="stamp">ARCHIVED</span>'
       : "";
-  const showGithubIcon = entry.repo_url && entry.repo_url !== entry.url;
+  const showGithubIcon = Boolean(entry.repo_url);
 
   return `
     <article class="card${dim ? " is-dim" : ""}">
