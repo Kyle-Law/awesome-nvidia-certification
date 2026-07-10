@@ -29,3 +29,21 @@ entries:
     certs: [NCA-GENL, NCA-AIIO]
     type: study-guide
     description: Official NVIDIA training and certification program overview.
+
+  - url: https://martin-kaufmann.github.io/ncp-aio-prep/
+    title: NCP-AIO Exam Prep
+    certs: [NCP-AIO]
+    type: simulation
+    description: Domain-weighted quiz, guided lab scenarios, and a stateful command sandbox (BCM cmsh, Slurm, Kubernetes, DCGM, InfiniBand) for NCP-AIO.
+
+  - url: https://dclabsim.com
+    title: DC Lab Sim
+    certs: [NCP-AII]
+    type: simulation
+    description: Practice lab for NCP-AII covering 229 datacenter commands across DGX, InfiniBand, and SLURM scenarios.
+
+  - url: https://kyle-law.github.io/bcm-simulator/
+    title: NVIDIA BCM Simulator
+    certs: [NCP-AIO]
+    type: simulation
+    description: Interactive cmsh command-line trainer for NVIDIA Base Command Manager.

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T17:22:20.331Z",
+  "generated_at": "2026-07-10T17:27:51.742Z",
   "entries": [
     {
       "url": "https://github.com/NVIDIA/nemo-guardrails",
@@ -27,7 +27,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:22:20.331Z"
+      "last_checked": "2026-07-10T17:27:51.742Z"
     },
     {
       "url": "https://github.com/NVIDIA/TensorRT-LLM",
@@ -51,7 +51,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:22:20.331Z"
+      "last_checked": "2026-07-10T17:27:51.742Z"
     },
     {
       "url": "https://www.nvidia.com/en-us/training/",
@@ -70,7 +70,70 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:22:20.331Z"
+      "last_checked": "2026-07-10T17:27:51.742Z"
+    },
+    {
+      "url": "https://martin-kaufmann.github.io/ncp-aio-prep/",
+      "title": "NCP-AIO Exam Prep",
+      "certs": [
+        "NCP-AIO"
+      ],
+      "type": "simulation",
+      "description": "Domain-weighted quiz, guided lab scenarios, and a stateful command sandbox (BCM cmsh, Slurm, Kubernetes, DCGM, InfiniBand) for NCP-AIO.",
+      "source": "github",
+      "stars": 0,
+      "last_updated": "2026-07-10T07:55:14Z",
+      "language": "HTML",
+      "topics": [
+        "base-command-manager",
+        "certification",
+        "dcgm",
+        "exam-prep",
+        "kubernetes",
+        "ncp-aio",
+        "nvidia",
+        "slurm"
+      ],
+      "archived": false,
+      "alive": true,
+      "date_added": "2026-07-10",
+      "last_checked": "2026-07-10T17:27:51.742Z"
+    },
+    {
+      "url": "https://dclabsim.com",
+      "title": "DC Lab Sim",
+      "certs": [
+        "NCP-AII"
+      ],
+      "type": "simulation",
+      "description": "Practice lab for NCP-AII covering 229 datacenter commands across DGX, InfiniBand, and SLURM scenarios.",
+      "source": "external",
+      "stars": null,
+      "last_updated": null,
+      "language": null,
+      "topics": [],
+      "archived": false,
+      "alive": true,
+      "date_added": "2026-07-10",
+      "last_checked": "2026-07-10T17:27:51.742Z"
+    },
+    {
+      "url": "https://kyle-law.github.io/bcm-simulator/",
+      "title": "NVIDIA BCM Simulator",
+      "certs": [
+        "NCP-AIO"
+      ],
+      "type": "simulation",
+      "description": "Interactive cmsh command-line trainer for NVIDIA Base Command Manager.",
+      "source": "github",
+      "stars": 1,
+      "last_updated": "2026-07-07T17:12:21Z",
+      "language": "JavaScript",
+      "topics": [],
+      "archived": false,
+      "alive": true,
+      "date_added": "2026-07-10",
+      "last_checked": "2026-07-10T17:27:51.742Z"
     }
   ]
 }
