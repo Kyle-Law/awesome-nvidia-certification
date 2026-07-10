@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T17:27:51.742Z",
+  "generated_at": "2026-07-10T17:28:17.590Z",
   "entries": [
     {
       "url": "https://github.com/NVIDIA/nemo-guardrails",
@@ -27,7 +27,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:27:51.742Z"
+      "last_checked": "2026-07-10T17:28:17.590Z"
     },
     {
       "url": "https://github.com/NVIDIA/TensorRT-LLM",
@@ -51,7 +51,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:27:51.742Z"
+      "last_checked": "2026-07-10T17:28:17.590Z"
     },
     {
       "url": "https://www.nvidia.com/en-us/training/",
@@ -70,7 +70,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:27:51.742Z"
+      "last_checked": "2026-07-10T17:28:17.590Z"
     },
     {
       "url": "https://martin-kaufmann.github.io/ncp-aio-prep/",
@@ -97,7 +97,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:27:51.742Z"
+      "last_checked": "2026-07-10T17:28:17.590Z"
     },
     {
       "url": "https://dclabsim.com",
@@ -115,7 +115,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:27:51.742Z"
+      "last_checked": "2026-07-10T17:28:17.590Z"
     },
     {
       "url": "https://kyle-law.github.io/bcm-simulator/",
@@ -133,7 +133,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T17:27:51.742Z"
+      "last_checked": "2026-07-10T17:28:17.590Z"
     }
   ]
 }
