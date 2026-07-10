@@ -61,7 +61,7 @@ function cardTemplate(entry) {
   const showGithubIcon = Boolean(entry.repo_url);
 
   return `
-    <article class="card${dim ? " is-dim" : ""}">
+    <article class="card${dim ? " is-dim" : ""}" title="Open link">
       <div class="card-head">
         <h2>${escapeHtml(entry.title)}</h2>
         <span class="type-badge">${escapeHtml(entry.type)}</span>
@@ -78,8 +78,8 @@ function cardTemplate(entry) {
         ${entry.certs.map((c) => `<span class="cert-tag">${escapeHtml(c)}</span>`).join("")}
       </div>
       <div class="card-actions">
-        <a class="icon-link" href="${escapeAttr(entry.url)}" target="_blank" rel="noopener" title="Open site" aria-label="Open ${escapeAttr(entry.title)} site">${ICON_EXTERNAL}</a>
-        ${showGithubIcon ? `<a class="icon-link" href="${escapeAttr(entry.repo_url)}" target="_blank" rel="noopener" title="View on GitHub" aria-label="View ${escapeAttr(entry.title)} on GitHub">${ICON_GITHUB}</a>` : ""}
+        <a class="icon-link" href="${escapeAttr(entry.url)}" target="_blank" rel="noopener" title="Open link" aria-label="Open ${escapeAttr(entry.title)} site">${ICON_EXTERNAL}</a>
+        ${showGithubIcon ? `<a class="icon-link" href="${escapeAttr(entry.repo_url)}" target="_blank" rel="noopener" title="View code" aria-label="View ${escapeAttr(entry.title)} on GitHub">${ICON_GITHUB}</a>` : ""}
       </div>
     </article>
   `;
