@@ -17,7 +17,7 @@ const GITHUB_API = "https://api.github.com";
 function githubHeaders() {
   const headers = {
     Accept: "application/vnd.github+json",
-    "User-Agent": "nvidia-cert-prep-hub-enrich",
+    "User-Agent": "awesome-nvidia-certification-enrich",
   };
   if (GITHUB_TOKEN) headers.Authorization = `Bearer ${GITHUB_TOKEN}`;
   return headers;

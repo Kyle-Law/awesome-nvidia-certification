@@ -1,4 +1,4 @@
-# NCA Prep Hub
+# Awesome NVIDIA Certification
 
 A community-maintained, awesome-list-style index of prep resources for **NVIDIA certification exams** — study guides, practice repos, flashcards, and simulations. Entries are ranked by real signal (stars, freshness, uptime), not submission order.
 
