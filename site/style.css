@@ -102,6 +102,15 @@ body {
   margin: 0;
 }
 
+.motto {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin: 0.9rem 0 0;
+}
+
 /* ---------- toolbar ---------- */
 
 .toolbar {
