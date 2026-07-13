@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T18:39:40.234Z",
+  "generated_at": "2026-07-13T09:33:08.197Z",
   "entries": [
     {
       "url": "https://martin-kaufmann.github.io/ncp-aio-prep/",
@@ -11,7 +11,7 @@
       "description": "Domain-weighted quiz, guided lab scenarios, and a stateful command sandbox (BCM cmsh, Slurm, Kubernetes, DCGM, InfiniBand) for NCP-AIO.",
       "source": "github",
       "repo_url": "https://github.com/martin-kaufmann/ncp-aio-prep",
-      "stars": 0,
+      "stars": 1,
       "last_updated": "2026-07-10T07:55:14Z",
       "language": "HTML",
       "topics": [
@@ -27,7 +27,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T18:39:40.234Z"
+      "last_checked": "2026-07-13T09:33:08.197Z"
     },
     {
       "url": "https://dclabsim.com",
@@ -46,7 +46,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T18:39:40.234Z"
+      "last_checked": "2026-07-13T09:33:08.197Z"
     },
     {
       "url": "https://kyle-law.github.io/bcm-simulator/",
@@ -58,14 +58,14 @@
       "description": "Interactive cmsh command-line trainer for NVIDIA Base Command Manager.",
       "source": "github",
       "repo_url": "https://github.com/kyle-law/bcm-simulator",
-      "stars": 1,
+      "stars": 2,
       "last_updated": "2026-07-07T17:12:21Z",
       "language": "JavaScript",
       "topics": [],
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-07-10T18:39:40.234Z"
+      "last_checked": "2026-07-13T09:33:08.197Z"
     }
   ]
 }
