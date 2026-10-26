@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T12:32:44.372Z",
+  "generated_at": "2026-10-26T12:29:25.452Z",
   "entries": [
     {
       "url": "https://martin-kaufmann.github.io/ncp-aio-prep/",
@@ -11,7 +11,7 @@
       "description": "Domain-weighted quiz, guided lab scenarios, and a stateful command sandbox (BCM cmsh, Slurm, Kubernetes, DCGM, InfiniBand) for NCP-AIO.",
       "source": "github",
       "repo_url": "https://github.com/martin-kaufmann/ncp-aio-prep",
-      "stars": 4,
+      "stars": 5,
       "last_updated": "2026-07-14T17:34:35Z",
       "language": "HTML",
       "topics": [
@@ -27,7 +27,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-10-19T12:32:44.372Z"
+      "last_checked": "2026-10-26T12:29:25.452Z"
     },
     {
       "url": "https://dclabsim.com",
@@ -46,7 +46,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-10-19T12:32:44.372Z"
+      "last_checked": "2026-10-26T12:29:25.452Z"
     },
     {
       "url": "https://kyle-law.github.io/bcm-simulator/",
@@ -65,7 +65,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-10-19T12:32:44.372Z"
+      "last_checked": "2026-10-26T12:29:25.452Z"
     }
   ]
 }
