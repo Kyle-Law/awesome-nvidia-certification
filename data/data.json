@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T15:35:31.227Z",
+  "generated_at": "2026-11-16T15:11:54.974Z",
   "entries": [
     {
       "url": "https://martin-kaufmann.github.io/ncp-aio-prep/",
@@ -27,7 +27,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-11-09T15:35:31.227Z"
+      "last_checked": "2026-11-16T15:11:54.974Z"
     },
     {
       "url": "https://dclabsim.com",
@@ -46,7 +46,7 @@
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-11-09T15:35:31.227Z"
+      "last_checked": "2026-11-16T15:11:54.974Z"
     },
     {
       "url": "https://kyle-law.github.io/bcm-simulator/",
@@ -58,14 +58,14 @@
       "description": "Interactive cmsh command-line trainer for NVIDIA Base Command Manager.",
       "source": "github",
       "repo_url": "https://github.com/kyle-law/bcm-simulator",
-      "stars": 4,
+      "stars": 5,
       "last_updated": "2026-07-07T17:12:21Z",
       "language": "JavaScript",
       "topics": [],
       "archived": false,
       "alive": true,
       "date_added": "2026-07-10",
-      "last_checked": "2026-11-09T15:35:31.227Z"
+      "last_checked": "2026-11-16T15:11:54.974Z"
     }
   ]
 }
